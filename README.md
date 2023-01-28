@@ -15,6 +15,9 @@ Locate the file on your computer (likely in the Downloads folder).
 
 Double-click the ZIP file to unpack it. This creates a new folder that contains the project files.
 
+# Html Page Live demo :
+https://tinyurl.com/openai-chatbot
+
 # In Android Studio :
 Open the project in Android Studio Start Android Studio. In the Welcome to Android Studio window, click Open.
 
