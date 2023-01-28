@@ -26,3 +26,6 @@ In the file browser, navigate to where the unzipped project folder is located (l
 Double-click on that project folder. Wait for Android Studio to open the project.
 
 Click the Run button.Make sure it builds as expected.
+
+# Screenshot :
+<img width="866" alt="image" src="https://user-images.githubusercontent.com/114596900/215252106-a3253beb-2b45-4b18-acdf-0c1b2a9b3ccf.png">
