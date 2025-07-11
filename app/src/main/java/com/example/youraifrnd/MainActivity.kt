@@ -86,7 +86,7 @@ fun customChromeTab() {
 fun openTab(context: Context) {
 
     val package_name = "com.android.chrome"
-    val URL = "https://tinyurl.com/openai-chatbot"
+    val URL = "https://gemini-flash-chatbot.vercel.app/"  //for more info refer the git : https://github.com/Harish-Srinivas-07/Gemini-chatBot
     val activity = (context as? Activity)
     val builder = CustomTabsIntent.Builder()
     builder.setShowTitle(true)
