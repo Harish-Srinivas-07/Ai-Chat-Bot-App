@@ -1,60 +1,89 @@
-# 🤖 Ai-Chat-Bot-App
+# 💬 Gemini-App
 
-Welcome to **Ai-Chat-Bot-App**, your gateway to exploring the world of AI-powered chatbot development and integration! 🤖🚀
+An elegant Android app wrapping the **Gemini ChatBot** web client inside a native **WebView**, offering a clean, minimal UI and the full chat experience from your Gemini-inspired AI chatbot — all in a lightweight Kotlin Android application.
 
-## Table of Contents 📋
 
-- [Introduction](#-introduction-)
-- [Getting Started](#-getting-started-)
-  - [Run the App](#run-the-app)
-  - [HTML Live Demo](#html-live-demo)
-- [Screenshots](#screenshots)
+## ✨ Features
 
-## 🌟 Introduction
+- 🔗 Loads [Gemini ChatBot](https://github.com/Harish-Srinivas-07/Gemini-chatBot) in WebView
+- 🌙 Full dark mode support
+- 🎯 Optimized for smooth performance and fast load times
+- 🧠 Backend powered by OpenAI/Gemini APIs
+- 📋 Chat UI with Markdown rendering, copy-to-clipboard, and typing animation
 
-Ai-Chat-Bot-App is a dynamic Android application that showcases the capabilities of AI-driven chatbots. Dive into the realm of conversational AI and experience the seamless interaction between users and intelligent chatbots, all packed within the context of modern Android app development.
+## 📁 Project Structure
+
+```
+Gemini-App/
+├── app/                     # Android app code (Kotlin + WebView)
+├── build.gradle             # Project-level build config
+├── .github/workflows/       # GitHub Actions for CI/CD
+└── README.md
+```
+
 
 ## 🚀 Getting Started
 
-To embark on your journey with Ai-Chat-Bot-App, follow these steps:
+### 1️⃣ Clone the Repo
 
-1. **Clone the Repository**: Begin by cloning this repository to your local machine using your preferred method.
+```bash
+git clone https://github.com/Harish-Srinivas-07/Gemini-App.git
+cd Gemini-App
+```
 
-2. **Open in Android Studio**: Launch Android Studio and choose "Open an existing Android Studio project." Navigate to the cloned repository and open the `Ai-Chat-Bot-App` directory.
+### 2️⃣ Open in Android Studio
 
-3. **Build the Project**: Once the project is loaded, build and sync the Gradle files. Android Studio will automatically handle the necessary dependencies.
+* Open the folder in **Android Studio**
+* Let it sync all Gradle dependencies
 
-### Run the App
+### 3️⃣ Run the App
 
-1. Code URL: [GitHub Repository](https://github.com/Harish-Srinivas-07/Ai-Chat-Bot-App)
-2. Visit the provided GitHub repository page for the project.
-3. Verify that the branch name matches the specified branch name mentioned in the repository.
-4. On the GitHub page for the project, click the "Code" button, triggering a popup.
-5. Within the popup, select the "Download ZIP" button to save the project to your computer. Wait for the download to finalize.
-6. Locate and access the downloaded ZIP file, typically located in your computer's Downloads folder.
-7. Double-click the ZIP file to extract its contents, forming a new folder containing all the project files.
+* Connect an emulator or Android device
+* Click ▶️ **Run**
 
-## HTML Live Demo
 
-Experience the Ai-Chat-Bot-App in action through the HTML live demo:
+## 🛠️ Build APK using GitHub Actions
 
-[OpenAI Chatbot Live Demo](https://tinyurl.com/openai-chatbot)
+The app is configured with a GitHub workflow to **auto-build and release APKs**.
 
-## In Android Studio
+🔧 **Steps:**
 
-Follow these steps to open and explore the project using Android Studio:
+1. Push a new Git **tag** (e.g. `v1.0.1`)
 
-1. Launch Android Studio.
-2. In the initial Android Studio window, click the "Open" option.
-3. Navigate to the directory where the unzipped project folder is located (usually within your Downloads folder).
-4. Locate the project folder and double-click to open it.
-5. Allow Android Studio a moment to fully load the project.
-6. Click the Run button within Android Studio to ensure a successful build.
+   ```bash
+   git tag v1.0.1
+   git push origin v1.0.1
+   ```
 
-## Screenshots
+2. GitHub Actions will:
 
-See the Ai-Chat-Bot-App in action:
+   * Build the APK
+   * Upload it as a release asset under **Releases**
 
-![Ai-Chat-Bot-App Screenshot](https://user-images.githubusercontent.com/114596900/215252106-a3253beb-2b45-4b18-acdf-0c1b2a9b3ccf.png)
+> Make sure `app-release.apk` is generated in `app/build/outputs/apk/release/` for the workflow to pick up.
 
-Explore the world of AI-powered chatbots and Android app development with Ai-Chat-Bot-App! 🤖📱🚀
+
+## 📦 Gemini ChatBot (WebView Source)
+
+This app wraps the following project:
+
+**👉 [Gemini ChatBot (Web version)](https://github.com/Harish-Srinivas-07/Gemini-chatBot)**
+A modern HTML/JS chatbot UI that uses OpenAI/Gemini API with Markdown, clipboard copy, and animated responses.
+
+
+
+## 🖼️ Preview
+
+| ChatBot UI (Web)                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------- |
+| ![Gemini Web](https://user-images.githubusercontent.com/114596900/215252106-a3253beb-2b45-4b18-acdf-0c1b2a9b3ccf.png) |
+
+
+
+## 📄 License
+
+This project is licensed under the [**MIT License**](LICENSE).
+Feel free to use, modify, and distribute it for educational and personal projects 
+
+
+Made with ❤️ by [@Harish-Srinivas-07](https://github.com/Harish-Srinivas-07)
